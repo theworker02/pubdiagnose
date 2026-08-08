@@ -1,8 +1,7 @@
 /// Dependency diagnostics and package-resolution analysis for Dart/pub.
 ///
-/// **PubDoctor** — Diagnose your Dart dependencies.
-///
-/// Prefer [PubDoctor.open] for programmatic use:
+/// **PubDiagnose** (`package:pubdiagnose`) — Diagnose your Dart dependencies.
+/// CLI executable: `pubdoctor`. Prefer [PubDoctor.open] for programmatic use:
 /// ```dart
 /// final kernel = await PubDoctor.open('.');
 /// final result = await kernel.check();

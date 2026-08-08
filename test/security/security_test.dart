@@ -1,6 +1,6 @@
-import 'package:pubdoctor/src/cli/runner.dart';
-import 'package:pubdoctor/src/security/package_integrity.dart';
-import 'package:pubdoctor/src/security/supply_chain_analyzer.dart';
+import 'package:pubdiagnose/src/cli/runner.dart';
+import 'package:pubdiagnose/src/security/package_integrity.dart';
+import 'package:pubdiagnose/src/security/supply_chain_analyzer.dart';
 import 'package:test/test.dart';
 
 import '../helpers.dart';

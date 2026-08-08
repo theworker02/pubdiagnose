@@ -2,6 +2,11 @@
 
 ## 2.0.0-rc.1
 
+### Packaging note
+
+- Pub package published as **`pubdiagnose`** (CLI executable remains `pubdoctor`).
+- Product display name / logos: **PubDiagnose**.
+
 ### Phases 28–35 — distributed, reproducibility, observatory, maintenance
 
 - `check --workers N` — local distributed worker pool with result verification.

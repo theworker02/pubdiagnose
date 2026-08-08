@@ -1,7 +1,7 @@
-import 'package:pubdoctor/src/cli/runner.dart';
-import 'package:pubdoctor/src/maintenance/maintenance_controller.dart';
-import 'package:pubdoctor/src/maintenance/maintenance_plan.dart';
-import 'package:pubdoctor/src/models/diagnostics.dart';
+import 'package:pubdiagnose/src/cli/runner.dart';
+import 'package:pubdiagnose/src/maintenance/maintenance_controller.dart';
+import 'package:pubdiagnose/src/maintenance/maintenance_plan.dart';
+import 'package:pubdiagnose/src/models/diagnostics.dart';
 import 'package:test/test.dart';
 
 import '../helpers.dart';

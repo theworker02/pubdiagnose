@@ -1,5 +1,5 @@
 import 'package:pub_semver/pub_semver.dart';
-import 'package:pubdoctor/pubdoctor.dart';
+import 'package:pubdiagnose/pubdiagnose.dart';
 import 'package:test/test.dart';
 
 import 'helpers.dart';

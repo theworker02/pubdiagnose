@@ -1,8 +1,8 @@
-# PubDoctor
+# PubDiagnose
 
 **Diagnose your Dart dependencies.**
 
-Pub already resolves dependencies. PubDoctor answers the questions developers still struggle with:
+Pub already resolves dependencies. PubDiagnose answers the questions developers still struggle with:
 
 - Why is this package installed?
 - Which dependency introduced it?
@@ -12,19 +12,19 @@ Pub already resolves dependencies. PubDoctor answers the questions developers st
 - Are `dependency_overrides` still necessary?
 - What packages need to change to unlock a requested version?
 
-Package / CLI name: `pubdoctor`.
+Pub package: `pubdiagnose`. CLI executable: `pubdoctor`.
 
 ## Installation
 
 ```bash
-dart pub global activate pubdoctor
+dart pub global activate pubdiagnose
 ```
 
 Or as a dev dependency:
 
 ```yaml
 dev_dependencies:
-  pubdoctor: ^1.0.0
+  pubdiagnose: ^2.0.0-rc.1
 ```
 
 ## Quick start
@@ -80,7 +80,7 @@ pubdoctor outdated
 ## Library usage
 
 ```dart
-import 'package:pubdoctor/pubdoctor.dart';
+import 'package:pubdiagnose/pubdiagnose.dart';
 
 Future<void> main() async {
   final kernel = await PubDoctor.open('.');

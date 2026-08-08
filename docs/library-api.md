@@ -1,6 +1,6 @@
-﻿# Library API
+# Library API
 
-Import `package:pubdoctor/pubdoctor.dart`.
+Import `package:pubdiagnose/pubdiagnose.dart`.
 
 Key types: `PubDoctor`, `PubWorkspace`, `DependencyGraph`, `ConstraintAnalyzer`, `HealthAnalyzer`, `FixPlanner`, `FixApplier`, `PubDoctorConfig`, `Baseline`, `DiagnosticCatalog`.
 

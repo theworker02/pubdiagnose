@@ -1,4 +1,4 @@
-# Contributing to PubDoctor
+# Contributing to PubDiagnose
 
 Thanks for contributing.
 

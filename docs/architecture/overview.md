@@ -34,4 +34,4 @@ Diagnostics → recommendations → remediation (optional)
 2. **No duplicate engines** — one graph, one diagnostic model, one fix planner.
 3. **Expected problems → diagnostics**, not crashes.
 4. **Explicit DI** via `ServiceRegistry` (not a service-locator dump).
-5. **Public API** stays `package:pubdoctor/pubdoctor.dart`.
+5. **Public API** stays `package:pubdiagnose/pubdiagnose.dart`.

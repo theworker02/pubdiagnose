@@ -1,6 +1,6 @@
 ﻿# FAQ
 
-**Does PubDoctor replace `dart pub get`?** No.
+**Does PubDiagnose replace `dart pub get`?** No.
 
 **Will `fix` edit my files by default?** No — propose only unless `--apply`.
 

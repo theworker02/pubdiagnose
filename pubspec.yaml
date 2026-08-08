@@ -1,8 +1,8 @@
-name: pubdoctor
+name: pubdiagnose
 description: >
-  PubDoctor — Diagnose your Dart dependencies. Explains why packages are
+  PubDiagnose — Diagnose your Dart dependencies. Explains why packages are
   installed, what blocks upgrades, and which constraints conflict — without
-  replacing pub's solver.
+  replacing pub's solver. CLI: pubdoctor.
 version: 2.0.0-rc.1
 repository: https://github.com/theworker02/pubdoctor
 homepage: https://github.com/theworker02/pubdoctor
@@ -19,6 +19,7 @@ topics:
 environment:
   sdk: ^3.5.0
 
+# Package name is pubdiagnose; CLI binary stays `pubdoctor`.
 executables:
   pubdoctor:
 

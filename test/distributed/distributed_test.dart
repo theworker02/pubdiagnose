@@ -1,10 +1,10 @@
-import 'package:pubdoctor/src/distributed/execution_coordinator.dart';
-import 'package:pubdoctor/src/distributed/execution_worker.dart';
-import 'package:pubdoctor/src/distributed/scheduler.dart';
-import 'package:pubdoctor/src/distributed/transport.dart';
-import 'package:pubdoctor/src/distributed/work_result.dart';
-import 'package:pubdoctor/src/distributed/work_unit.dart';
-import 'package:pubdoctor/src/distributed/worker_capability.dart';
+import 'package:pubdiagnose/src/distributed/execution_coordinator.dart';
+import 'package:pubdiagnose/src/distributed/execution_worker.dart';
+import 'package:pubdiagnose/src/distributed/scheduler.dart';
+import 'package:pubdiagnose/src/distributed/transport.dart';
+import 'package:pubdiagnose/src/distributed/work_result.dart';
+import 'package:pubdiagnose/src/distributed/work_unit.dart';
+import 'package:pubdiagnose/src/distributed/worker_capability.dart';
 import 'package:test/test.dart';
 
 void main() {

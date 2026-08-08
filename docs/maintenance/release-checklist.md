@@ -13,7 +13,7 @@ Automated by `dart run scripts/verify.dart` where possible.
 - [ ] `lib/src/version.dart` matches `pubspec.yaml`
 - [ ] README commands match CLI (`--help`)
 - [ ] Platform support matrix in `docs/compatibility.md` current
-- [ ] Branding: product **PubDoctor**, package/CLI `pubdoctor`
+- [ ] Branding: product **PubDiagnose**, package `pubdiagnose`, CLI `pubdoctor`
 
 ## Release channels
 

@@ -1,6 +1,6 @@
-import 'package:pubdoctor/src/cli/runner.dart';
-import 'package:pubdoctor/src/remote/remote_workspace.dart';
-import 'package:pubdoctor/src/runtime/runtime_profile.dart';
+import 'package:pubdiagnose/src/cli/runner.dart';
+import 'package:pubdiagnose/src/remote/remote_workspace.dart';
+import 'package:pubdiagnose/src/runtime/runtime_profile.dart';
 import 'package:test/test.dart';
 
 import '../helpers.dart';

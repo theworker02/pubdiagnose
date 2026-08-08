@@ -1,7 +1,7 @@
 // ignore_for_file: avoid_print
 
 import 'package:pub_semver/pub_semver.dart';
-import 'package:pubdoctor/pubdoctor.dart';
+import 'package:pubdiagnose/pubdiagnose.dart';
 
 /// Example: load a workspace and explain why a package is present.
 Future<void> main() async {

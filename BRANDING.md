@@ -1,12 +1,16 @@
-# PubDoctor Branding
+# PubDiagnose Branding
 
-**Product name:** PubDoctor  
-**Package / CLI:** `pubdoctor`  
-**Tagline:** Diagnose your Dart dependencies.
+**Product name:** PubDiagnose  
+**Pub package:** `pubdiagnose`  
+**CLI executable:** `pubdoctor` (mapped via `executables:` in pubspec)  
+**Tagline:** Diagnose your Dart dependencies.  
+**GitHub repository:** `theworker02/pubdoctor` (repo name kept for continuity)
 
 ## Logo concept
 
 Dependency nodes connected inside a package/cube silhouette, with a diagnostic check/pulse accent. Geometry is Dart-inspired (clean facets, teal depth) but **does not** copy the official Dart logo. Avoid medical clip-art.
+
+Wordmarks and social cards use **PubDiagnose** to match the pub.dev package identity. The CLI command remains `pubdoctor` for muscle memory.
 
 ## Assets
 
@@ -35,7 +39,7 @@ Dependency nodes connected inside a package/cube silhouette, with a diagnostic c
 ## Clear space & minimum size
 
 - Clear space around the mark: ≥ 1/8 of the mark width on all sides.
-- Minimum digital size: **24px** (mark), **120px** wide (horizontal).
+- Minimum digital size: **24px** (mark), **140px** wide (horizontal).
 - Do not place the mark on busy photography without a solid scrim.
 
 ## Light / dark
@@ -57,6 +61,7 @@ Dependency nodes connected inside a package/cube silhouette, with a diagnostic c
 - Do not stretch, rotate beyond 15°, or add drop-shadow stacks.
 - Do not place competing badges over the mark.
 - Do not imply endorsement by the Dart or Flutter trademarks.
+- Do not publish wordmarks that still say “PubDoctor” — package identity is PubDiagnose.
 
 ## Accessibility
 

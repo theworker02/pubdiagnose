@@ -1,9 +1,9 @@
-﻿# Getting started
+# Getting started
 
 ## Install
 
 ```bash
-dart pub global activate pubdoctor
+dart pub global activate pubdiagnose
 ```
 
 Requires Dart SDK ^3.5.
@@ -27,7 +27,7 @@ pubdoctor unused
 ## Library usage
 
 ```dart
-import 'package:pubdoctor/pubdoctor.dart';
+import 'package:pubdiagnose/pubdiagnose.dart';
 
 final ws = await PubDoctor.load('.');
 print(ws.check().summary);

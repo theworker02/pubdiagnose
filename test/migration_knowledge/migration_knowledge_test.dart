@@ -1,6 +1,6 @@
-import 'package:pubdoctor/src/cli/runner.dart';
-import 'package:pubdoctor/src/migration_knowledge/migration_catalog.dart';
-import 'package:pubdoctor/src/migration_knowledge/migration_rule.dart';
+import 'package:pubdiagnose/src/cli/runner.dart';
+import 'package:pubdiagnose/src/migration_knowledge/migration_catalog.dart';
+import 'package:pubdiagnose/src/migration_knowledge/migration_rule.dart';
 import 'package:test/test.dart';
 
 import '../helpers.dart';

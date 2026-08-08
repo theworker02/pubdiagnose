@@ -1,14 +1,15 @@
 # Maintainers
 
-PubDoctor is maintained as long-lived Dart ecosystem infrastructure.
+PubDiagnose is maintained as long-lived Dart ecosystem infrastructure.
 
 ## Responsibilities
 
-- Keep `package:pubdoctor` public API backward compatible unless clearly defective
+- Keep `package:pubdiagnose` public API backward compatible unless clearly defective
 - Prefer diagnostics over crashes for expected failure modes
 - Run `dart run scripts/verify.dart` before releases
 - Update `docs/compatibility.md` when platform/SDK support changes
 - Never silently discard user config during schema migrations
+- Keep public branding (logos / wordmarks) aligned with the pub package name
 
 ## Contact
 

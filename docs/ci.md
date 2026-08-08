@@ -1,7 +1,7 @@
 ﻿# CI
 
 ```bash
-dart pub global activate pubdoctor
+dart pub global activate pubdiagnose
 pubdoctor check --ci --fail-on error
 ```
 

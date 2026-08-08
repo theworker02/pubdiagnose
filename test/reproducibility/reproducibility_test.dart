@@ -1,6 +1,6 @@
-import 'package:pubdoctor/src/cli/runner.dart';
-import 'package:pubdoctor/src/environment_snapshot/environment_diff.dart';
-import 'package:pubdoctor/src/environment_snapshot/environment_snapshot.dart';
+import 'package:pubdiagnose/src/cli/runner.dart';
+import 'package:pubdiagnose/src/environment_snapshot/environment_diff.dart';
+import 'package:pubdiagnose/src/environment_snapshot/environment_snapshot.dart';
 import 'package:test/test.dart';
 
 import '../helpers.dart';

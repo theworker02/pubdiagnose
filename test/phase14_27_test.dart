@@ -1,11 +1,11 @@
 import 'dart:io';
 
 import 'package:path/path.dart' as p;
-import 'package:pubdoctor/src/cli/runner.dart';
-import 'package:pubdoctor/src/healing/healing_engine.dart';
-import 'package:pubdoctor/src/kernel/pubdoctor_kernel.dart';
-import 'package:pubdoctor/src/kernel/pubdoctor_options.dart';
-import 'package:pubdoctor/src/verification/verification_controller.dart';
+import 'package:pubdiagnose/src/cli/runner.dart';
+import 'package:pubdiagnose/src/healing/healing_engine.dart';
+import 'package:pubdiagnose/src/kernel/pubdoctor_kernel.dart';
+import 'package:pubdiagnose/src/kernel/pubdoctor_options.dart';
+import 'package:pubdiagnose/src/verification/verification_controller.dart';
 import 'package:test/test.dart';
 
 import 'helpers.dart';

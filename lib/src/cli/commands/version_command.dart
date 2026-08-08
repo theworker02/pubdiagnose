@@ -25,7 +25,7 @@ class VersionCommand extends PubDoctorCommand {
 
   @override
   String get description =>
-      'Show PubDoctor version and compatibility matrix; optional pub.dev check.';
+      'Show PubDiagnose version and compatibility matrix; optional pub.dev check.';
 
   @override
   Future<int> run() async {
@@ -61,7 +61,7 @@ class VersionCommand extends PubDoctorCommand {
     if (console.json) {
       console.writeJson(payload);
     } else {
-      console.title('PubDoctor $pubdoctorPackageVersion');
+      console.title('PubDiagnose $pubdoctorPackageVersion');
       final compat = CompatibilityMatrix.snapshot();
       console.line('Dart SDK: ${compat['dartSdk']}');
       console.line('Platforms: ${(compat['platforms'] as List).join(', ')}');
@@ -74,7 +74,7 @@ class VersionCommand extends PubDoctorCommand {
         } else if (payload['updateAvailable'] == true) {
           console.warning(
             'Latest on pub.dev: $latest (you have $pubdoctorPackageVersion). '
-            'Update manually — PubDoctor never auto-updates.',
+            'Update manually — PubDiagnose never auto-updates.',
           );
         } else {
           console.success('Up to date with pub.dev ($latest).');

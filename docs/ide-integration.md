@@ -1,6 +1,6 @@
 # IDE & CI integration
 
-PubDoctor exposes stable machine formats for editors, bots, and pipelines.
+PubDiagnose exposes stable machine formats for editors, bots, and pipelines.
 
 ## Inspect (IDE bootstrap)
 
@@ -25,7 +25,7 @@ Exit codes: `0` ok, `1` diagnostics, `2` invalid input.
 ## Programmatic API
 
 ```dart
-import 'package:pubdoctor/pubdoctor.dart';
+import 'package:pubdiagnose/pubdiagnose.dart';
 
 Future<void> main() async {
   final kernel = await PubDoctor.open('.');
@@ -45,11 +45,11 @@ Future<void> main() async {
 
 ```yaml
 - uses: dart-lang/setup-dart@v1
-- run: dart pub global activate pubdoctor
+- run: dart pub global activate pubdiagnose
 - run: pubdoctor check --ci --json --fail-on error
 ```
 
-See `.github/workflows/ci.yml` in this repository for the matrix used by PubDoctor itself.
+See `.github/workflows/ci.yml` in this repository for the matrix used by PubDiagnose itself.
 
 ## Stability
 

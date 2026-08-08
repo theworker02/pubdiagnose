@@ -1,6 +1,6 @@
-import 'package:pubdoctor/pubdoctor.dart';
-import 'package:pubdoctor/src/cli/console.dart';
-import 'package:pubdoctor/src/cli/runner.dart';
+import 'package:pubdiagnose/pubdiagnose.dart';
+import 'package:pubdiagnose/src/cli/console.dart';
+import 'package:pubdiagnose/src/cli/runner.dart';
 import 'package:test/test.dart';
 
 import '../helpers.dart';

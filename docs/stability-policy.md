@@ -1,13 +1,13 @@
 # Stability Policy
 
-PubDoctor follows [Semantic Versioning](https://semver.org/) for its **stable**
+PubDiagnose follows [Semantic Versioning](https://semver.org/) for its **stable**
 surface.
 
 ## What requires a major version bump
 
 Breaking changes to any of the following require a new major version:
 
-- Stable Dart library APIs exported from `package:pubdoctor/pubdoctor.dart`
+- Stable Dart library APIs exported from `package:pubdiagnose/pubdiagnose.dart`
 - Stable CLI command names, required arguments, and documented exit codes
 - Stable JSON fields emitted by CLI `--json` / `--jsonl` envelopes
 - `pubdoctor.yaml` configuration schema keys with defined semantics
@@ -27,7 +27,7 @@ See `FeatureMaturityCatalog` (`lib/src/features/feature_maturity.dart`) and
 
 ## Compatibility promises
 
-- PubDoctor does **not** replace `dart pub`’s solver.
+- PubDiagnose does **not** replace `dart pub`’s solver.
 - Offline / `--offline` modes degrade gracefully (skip network enrichment).
 - Optional subsystems (plugins, Flutter inspection) failing must not abort
   core diagnostics startup.

@@ -91,7 +91,7 @@ class PubDoctorCommandRunner extends CommandRunner<int> {
         _err = err ?? stderr,
         super(
           'pubdoctor',
-          'PubDoctor — Diagnose your Dart dependencies.\n\n'
+          'PubDiagnose — Diagnose your Dart dependencies.\n\n'
               'Exit codes: 0 = ok, 1 = diagnostics found, 2 = invalid input.',
         ) {
     argParser

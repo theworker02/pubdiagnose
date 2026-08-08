@@ -130,7 +130,7 @@ class CheckCommand extends PubDoctorCommand {
         return shouldFail ? ExitCodes.diagnostics : ExitCodes.ok;
       }
 
-      console.title('PubDoctor / Diagnose your Dart dependencies.');
+      console.title('PubDiagnose / Diagnose your Dart dependencies.');
       console.line();
       console.title('check: ${report.projectName}');
       switch (report.status) {

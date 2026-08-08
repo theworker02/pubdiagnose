@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="PubDoctor dark">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="PubDiagnose dark">
   <rect width="512" height="512" rx="96" fill="#0A1620"/>
   <path d="M256 118 L360 178 L360 298 L256 358 L152 298 L152 178 Z" fill="none" stroke="#E8F1F2" stroke-width="18" stroke-linejoin="round"/>
   <path d="M256 118 L360 178 L256 238 L152 178 Z" fill="#1F7A8C" opacity="0.35"/>

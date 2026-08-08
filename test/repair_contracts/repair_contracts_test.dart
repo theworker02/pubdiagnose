@@ -1,6 +1,6 @@
-import 'package:pubdoctor/src/cli/runner.dart';
-import 'package:pubdoctor/src/repair_contracts/proof_result.dart';
-import 'package:pubdoctor/src/repair_contracts/repair_contract.dart';
+import 'package:pubdiagnose/src/cli/runner.dart';
+import 'package:pubdiagnose/src/repair_contracts/proof_result.dart';
+import 'package:pubdiagnose/src/repair_contracts/repair_contract.dart';
 import 'package:test/test.dart';
 
 import '../helpers.dart';

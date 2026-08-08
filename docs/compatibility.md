@@ -1,6 +1,6 @@
 # Compatibility
 
-PubDoctor targets long-lived Dart/pub tooling. Core analysis does **not** require
+PubDiagnose targets long-lived Dart/pub tooling. Core analysis does **not** require
 Docker, Flutter, Git, Bash, PowerShell, Node, Python, or native binaries.
 
 ## Dart / Flutter
@@ -49,4 +49,4 @@ pubdoctor version
 pubdoctor version --check   # queries pub.dev; never auto-updates
 ```
 
-See also `CompatibilityMatrix.snapshot()` in `package:pubdoctor`.
+See also `CompatibilityMatrix.snapshot()` in `package:pubdiagnose`.
