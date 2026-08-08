@@ -4,8 +4,9 @@
 
 ### Packaging note
 
-- Pub package published as **`pubdiagnose`** (CLI executable remains `pubdoctor`).
+- Pub package published as **[`pubdiagnose`](https://pub.dev/packages/pubdiagnose)** (CLI executable remains `pubdoctor`).
 - Product display name / logos: **PubDiagnose**.
+- Install: `dart pub global activate pubdiagnose`
 
 ### Phases 28–35 — distributed, reproducibility, observatory, maintenance
 

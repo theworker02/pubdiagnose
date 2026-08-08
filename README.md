@@ -1,6 +1,19 @@
 # PubDiagnose
 
+<p align="center">
+  <img src="assets/branding/logo-horizontal.svg" alt="PubDiagnose" width="420" />
+</p>
+
+<p align="center">
+  <a href="https://pub.dev/packages/pubdiagnose"><img src="https://img.shields.io/pub/v/pubdiagnose.svg" alt="pub package" /></a>
+  <a href="https://pub.dev/packages/pubdiagnose"><img src="https://img.shields.io/pub/likes/pubdiagnose?logo=dart" alt="pub likes" /></a>
+  <a href="https://github.com/theworker02/pubdiagnose/actions"><img src="https://github.com/theworker02/pubdiagnose/actions/workflows/ci.yml/badge.svg" alt="CI" /></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="MIT license" /></a>
+</p>
+
 **Diagnose your Dart dependencies.**
+
+[pub.dev package](https://pub.dev/packages/pubdiagnose) · [Documentation](docs/) · [Changelog](CHANGELOG.md)
 
 Pub already resolves dependencies. PubDiagnose answers the questions developers still struggle with:
 
@@ -12,7 +25,7 @@ Pub already resolves dependencies. PubDiagnose answers the questions developers 
 - Are `dependency_overrides` still necessary?
 - What packages need to change to unlock a requested version?
 
-Pub package: `pubdiagnose`. CLI executable: `pubdoctor`.
+Pub package: [`pubdiagnose`](https://pub.dev/packages/pubdiagnose). CLI executable: `pubdoctor`.
 
 ## Installation
 
@@ -25,6 +38,12 @@ Or as a dev dependency:
 ```yaml
 dev_dependencies:
   pubdiagnose: ^2.0.0-rc.1
+```
+
+Then run the CLI (executable name is still `pubdoctor`):
+
+```bash
+pubdoctor check
 ```
 
 ## Quick start
