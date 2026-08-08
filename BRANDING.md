@@ -4,7 +4,7 @@
 **Pub package:** `pubdiagnose`  
 **CLI executable:** `pubdoctor` (mapped via `executables:` in pubspec)  
 **Tagline:** Diagnose your Dart dependencies.  
-**GitHub repository:** `theworker02/pubdoctor` (repo name kept for continuity)
+**GitHub repository:** `theworker02/pubdiagnose`
 
 ## Logo concept
 
