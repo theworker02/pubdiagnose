@@ -1,0 +1,18 @@
+{
+  "id": "dart-sdk-pack-example",
+  "package": "dart",
+  "fromConstraint": ">=3.4.0 <3.5.0",
+  "toConstraint": ">=3.5.0 <3.6.0",
+  "risk": "moderate",
+  "transformations": [
+    {
+      "from": "language-3.4",
+      "to": "language-3.5",
+      "kind": "behavior",
+      "notes": "Update environment.sdk; re-run analyzer.",
+      "automated": false
+    }
+  ],
+  "verification": ["dart analyze", "pubdoctor check"],
+  "evidence": "Local dart_sdk migration pack"
+}

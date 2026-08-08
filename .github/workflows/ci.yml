@@ -1,0 +1,49 @@
+name: CI
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+  schedule:
+    - cron: '0 6 * * 1'
+  workflow_dispatch:
+
+jobs:
+  test:
+    name: Dart ${{ matrix.sdk }} / ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+        sdk: [stable]
+        include:
+          - os: ubuntu-latest
+            sdk: 3.5.0
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dart-lang/setup-dart@v1
+        with:
+          sdk: ${{ matrix.sdk }}
+      - name: Pub get
+        run: dart pub get
+      - name: Analyze
+        run: dart analyze
+      - name: Test
+        run: dart test
+      - name: Verify (no publish)
+        if: runner.os == 'Linux' && matrix.sdk == 'stable'
+        run: dart run scripts/verify.dart --skip-publish
+
+  compatibility:
+    name: Weekly compatibility
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dart-lang/setup-dart@v1
+      - run: dart pub get
+      - run: dart test test/regression
+      - run: dart run bin/pubdoctor.dart version --json
+      - run: dart run bin/pubdoctor.dart doctor-report
+      - run: dart pub publish --dry-run

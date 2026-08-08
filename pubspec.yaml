@@ -1,0 +1,35 @@
+name: pubdoctor
+description: >
+  PubDoctor — Diagnose your Dart dependencies. Explains why packages are
+  installed, what blocks upgrades, and which constraints conflict — without
+  replacing pub's solver.
+version: 2.0.0-rc.1
+repository: https://github.com/theworker02/pubdoctor
+homepage: https://github.com/theworker02/pubdoctor
+issue_tracker: https://github.com/theworker02/pubdoctor/issues
+documentation: https://github.com/theworker02/pubdoctor/tree/main/docs
+
+topics:
+  - dependencies
+  - tooling
+  - cli
+  - diagnostics
+  - pub
+
+environment:
+  sdk: ^3.5.0
+
+executables:
+  pubdoctor:
+
+dependencies:
+  args: ^2.5.0
+  collection: ^1.18.0
+  http: ^1.2.0
+  path: ^1.9.0
+  pub_semver: ^2.1.4
+  yaml: ^3.1.2
+
+dev_dependencies:
+  lints: ^5.0.0
+  test: ^1.25.6

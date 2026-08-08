@@ -1,0 +1,11 @@
+name: overrides_app
+version: 1.0.0
+environment:
+  sdk: ^3.5.0
+
+dependencies:
+  alpha: ^1.0.0
+
+dependency_overrides:
+  shared: 1.5.0
+  leftover: 0.1.0

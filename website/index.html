@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PubDoctor</title>
+  <style>
+    :root {
+      --ink: #1a2332;
+      --paper: #f3efe6;
+      --accent: #0b6e4f;
+      --muted: #5c6b7a;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(1200px 600px at 10% -10%, #d7e8df 0%, transparent 55%),
+        linear-gradient(160deg, #f7f4ec, #e8eef2);
+      min-height: 100vh;
+    }
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 4.5rem 1.5rem 3rem;
+    }
+    h1 {
+      font-family: "IBM Plex Serif", Georgia, serif;
+      font-size: clamp(2.4rem, 6vw, 3.4rem);
+      letter-spacing: -0.02em;
+      margin: 0 0 0.4rem;
+    }
+    .tag {
+      color: var(--accent);
+      font-weight: 600;
+      margin-bottom: 1.2rem;
+    }
+    p { line-height: 1.55; color: var(--muted); max-width: 38rem; }
+    a.cta {
+      display: inline-block;
+      margin-top: 1.5rem;
+      background: var(--accent);
+      color: white;
+      text-decoration: none;
+      padding: 0.7rem 1.1rem;
+      border-radius: 6px;
+      font-weight: 600;
+    }
+    code {
+      font-family: "IBM Plex Mono", Consolas, monospace;
+      background: rgba(26, 35, 50, 0.06);
+      padding: 0.1rem 0.35rem;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="tag">Dart / pub tooling</div>
+    <h1>PubDoctor</h1>
+    <p>Diagnose your Dart dependencies — why packages are installed, what blocks upgrades, and which constraints conflict — without replacing pub’s solver.</p>
+    <p><code>dart pub global activate pubdoctor</code></p>
+    <a class="cta" href="https://github.com/theworker02/pubdoctor">View on GitHub</a>
+  </main>
+</body>
+</html>

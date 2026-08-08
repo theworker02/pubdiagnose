@@ -1,0 +1,10 @@
+name: conflict_example
+version: 1.0.0
+publish_to: none
+environment:
+  sdk: ^3.5.0
+dependencies:
+  # Fixture-only conflicting constraints via lockfile edges — see README note.
+  path: 1.8.0
+dev_dependencies:
+  lints: ^5.0.0

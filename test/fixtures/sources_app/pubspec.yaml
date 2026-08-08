@@ -1,0 +1,28 @@
+name: sources_app
+version: 1.0.0+1
+description: Mixed dependency sources
+publish_to: none
+environment:
+  sdk: ">=3.5.0 <4.0.0"
+  flutter: ">=3.22.0"
+
+dependencies:
+  http: ^1.2.0
+  analyzer:
+    hosted: https://pub.example.com
+    version: ^6.0.0
+  local_pkg:
+    path: ./vendor/local_pkg
+  from_git:
+    git:
+      url: https://github.com/example/from_git.git
+      ref: main
+      path: packages/from_git
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  lints: any
+
+dependency_overrides:
+  http: 1.2.1

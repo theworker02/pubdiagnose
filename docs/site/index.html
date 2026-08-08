@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>PubDoctor — Diagnose your Dart dependencies</title>
+  <meta name="description" content="PubDoctor diagnoses Dart/pub dependencies: conflicts, overrides, unused deps, upgrade blockers, and safe fixes."/>
+  <meta property="og:title" content="PubDoctor"/>
+  <meta property="og:description" content="Diagnose your Dart dependencies."/>
+  <meta property="og:image" content="assets/social-preview.png"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <link rel="icon" href="assets/icon.svg"/>
+  <link rel="stylesheet" href="css/site.css"/>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="top">
+    <div class="wrap brand-row">
+      <img src="assets/logo-mark.svg" alt="" width="36" height="36"/>
+      <span class="brand">PubDoctor</span>
+      <nav aria-label="Primary">
+        <a href="#features">Features</a>
+        <a href="#install">Install</a>
+        <a href="#demo">Demo</a>
+        <button type="button" id="themeToggle" aria-label="Toggle color theme">Theme</button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="brand-hero">PubDoctor</p>
+          <h1>Diagnose your Dart dependencies.</h1>
+          <p class="lede">Explain conflicts, overrides, unused packages, and upgrade blockers — without replacing pub’s solver.</p>
+          <div class="cta">
+            <a class="btn primary" href="#install">Install</a>
+            <a class="btn" href="https://pub.dev/packages/pubdoctor">pub.dev</a>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <img src="assets/logo.svg" alt=""/>
+        </div>
+      </div>
+    </section>
+
+    <section id="demo" class="section">
+      <div class="wrap">
+        <h2>Terminal demo</h2>
+        <pre class="term" tabindex="0"><code id="demoCode">$ pubdoctor check
+PubDoctor / Diagnose your Dart dependencies.
+
+check: my_app
+ATTENTION REQUIRED — 2 finding(s), 1 override(s).
+
+Dependencies: 12 direct, 4 dev, 86 transitive
+[WARNING PD1301] Direct import not declared
+  Package "collection" is imported directly but is not declared…
+  → Add "collection" to dependencies, then run `dart pub get`.</code><button type="button" class="copy" data-copy="demoCode">Copy</button></pre>
+      </div>
+    </section>
+
+    <section id="features" class="section">
+      <div class="wrap">
+        <h2>Features</h2>
+        <ul class="features">
+          <li><strong>Health check</strong> — one command for conflicts, overrides, imports, unused, outdated.</li>
+          <li><strong>Evidence-first</strong> — stable PD codes with remediation.</li>
+          <li><strong>Safe fixes</strong> — propose by default; transactional apply with rollback.</li>
+          <li><strong>CI ready</strong> — `--ci`, `--fail-on`, baselines.</li>
+          <li><strong>Workspaces</strong> — first-class Dart pub monorepo analysis.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="install" class="section">
+      <div class="wrap">
+        <h2>Install</h2>
+        <pre class="term"><code id="installCode">dart pub global activate pubdoctor
+pubdoctor check</code><button type="button" class="copy" data-copy="installCode">Copy</button></pre>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <p>PubDoctor · Diagnose your Dart dependencies.</p>
+      <p><a href="https://github.com/theworker02/pubdoctor">GitHub</a> · <a href="https://pub.dev/packages/pubdoctor">pub.dev</a></p>
+    </div>
+  </footer>
+  <script src="js/site.js"></script>
+</body>
+</html>

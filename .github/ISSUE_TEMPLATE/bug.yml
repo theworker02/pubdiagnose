@@ -1,0 +1,24 @@
+name: Bug report
+description: Report broken analysis or CLI behavior
+labels: ["bug"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+    validations:
+      required: true
+  - type: textarea
+    id: expect
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: pubdoctor version (`pubdoctor --version`)
+  - type: textarea
+    id: repro
+    attributes:
+      label: Minimal reproduction (pubspec snippet / fixture)

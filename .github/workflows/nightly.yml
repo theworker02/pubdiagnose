@@ -1,0 +1,19 @@
+name: Nightly extended
+
+on:
+  schedule:
+    - cron: '0 3 * * *'
+  workflow_dispatch:
+
+jobs:
+  extended:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dart-lang/setup-dart@v1
+      - run: dart pub get
+      - run: dart test
+      - run: dart run scripts/verify.dart
+      - name: Stress fixtures
+        run: dart test test/regression/stress_test.dart
+        continue-on-error: true

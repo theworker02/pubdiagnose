@@ -1,0 +1,19 @@
+# https://dart.dev/tools/private-files
+.dart_tool/
+build/
+.packages
+.pub-cache/
+.pub/
+
+# IDE / OS
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
+
+# Local verify harness / pubdoctor state
+verify-report.json
+.pubdoctor_pubspec.bak
+.pubdoctor_baseline.json
+.dart_tool/pubdoctor/

@@ -1,0 +1,7 @@
+# Keep in git for contributors; omit from the pub.dev archive.
+# Avoids package-layout warnings for plural top-level dirs (docs/, examples/).
+docs/
+examples/
+website/
+scripts/
+verify-report.json

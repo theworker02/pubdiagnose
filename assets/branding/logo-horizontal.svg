@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 160" role="img" aria-label="PubDoctor">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B3D4A"/>
+      <stop offset="100%" stop-color="#1F7A8C"/>
+    </linearGradient>
+  </defs>
+  <rect x="8" y="24" width="112" height="112" rx="24" fill="url(#g)"/>
+  <path d="M64 44 L90 59 L90 89 L64 104 L38 89 L38 59 Z" fill="none" stroke="#E8F1F2" stroke-width="5" stroke-linejoin="round"/>
+  <circle cx="52" cy="68" r="4" fill="#E8F1F2"/>
+  <circle cx="64" cy="76" r="5" fill="#F4A261"/>
+  <circle cx="76" cy="68" r="4" fill="#E8F1F2"/>
+  <path d="M54 90 L62 97 L78 78" fill="none" stroke="#F4A261" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="140" y="98" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="64" font-weight="700" fill="#0B3D4A">PubDoctor</text>
+</svg>

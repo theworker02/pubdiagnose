@@ -1,0 +1,16 @@
+name: PubDoctor example
+
+# Reusable example for consuming repositories.
+on:
+  workflow_call:
+  workflow_dispatch:
+
+jobs:
+  pubdoctor:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dart-lang/setup-dart@v1
+      - run: dart pub get
+      - run: dart pub global activate pubdoctor
+      - run: pubdoctor check --ci --fail-on error

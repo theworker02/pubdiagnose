@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="PubDoctor dark">
+  <rect width="512" height="512" rx="96" fill="#0A1620"/>
+  <path d="M256 118 L360 178 L360 298 L256 358 L152 298 L152 178 Z" fill="none" stroke="#E8F1F2" stroke-width="18" stroke-linejoin="round"/>
+  <path d="M256 118 L360 178 L256 238 L152 178 Z" fill="#1F7A8C" opacity="0.35"/>
+  <circle cx="190" cy="220" r="18" fill="#E8F1F2"/>
+  <circle cx="256" cy="258" r="22" fill="#F4A261"/>
+  <circle cx="322" cy="220" r="18" fill="#E8F1F2"/>
+  <path d="M208 228 L238 248" stroke="#E8F1F2" stroke-width="10" stroke-linecap="round"/>
+  <path d="M274 248 L304 228" stroke="#E8F1F2" stroke-width="10" stroke-linecap="round"/>
+  <path d="M210 320 L242 348 L310 270" fill="none" stroke="#F4A261" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

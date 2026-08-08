@@ -1,0 +1,18 @@
+{
+  "id": "args-2-pack",
+  "package": "args",
+  "fromConstraint": ">=2.0.0 <2.4.0",
+  "toConstraint": ">=2.4.0 <3.0.0",
+  "risk": "low",
+  "transformations": [
+    {
+      "from": "ArgParser",
+      "to": "ArgParser",
+      "kind": "behavior",
+      "notes": "Review newly added option APIs; most call sites unchanged.",
+      "automated": false
+    }
+  ],
+  "verification": ["dart analyze"],
+  "evidence": "Local packages migration pack"
+}

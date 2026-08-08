@@ -1,0 +1,10 @@
+{
+  "id": "flutter-pack-stub",
+  "package": "flutter",
+  "fromConstraint": ">=3.22.0 <3.24.0",
+  "toConstraint": ">=3.24.0 <3.25.0",
+  "risk": "moderate",
+  "transformations": [],
+  "verification": ["flutter analyze"],
+  "evidence": "Local flutter migration pack stub"
+}

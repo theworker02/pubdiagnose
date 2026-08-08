@@ -1,0 +1,32 @@
+version: 3
+sdks:
+  dart: ">=3.5.0 <4.0.0"
+packages:
+  alpha:
+    dependency: "direct main"
+    description:
+      name: alpha
+      sha256: "1111111111111111111111111111111111111111111111111111111111111111"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.0.0"
+    dependencies:
+      shared: ^1.0.0
+  beta:
+    dependency: "direct main"
+    description:
+      name: beta
+      sha256: "2222222222222222222222222222222222222222222222222222222222222222"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.0.0"
+    dependencies:
+      shared: ^2.0.0
+  shared:
+    dependency: transitive
+    description:
+      name: shared
+      sha256: "3333333333333333333333333333333333333333333333333333333333333333"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.5.0"

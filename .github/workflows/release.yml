@@ -1,0 +1,29 @@
+name: Release
+
+on:
+  push:
+    tags: ['v*.*.*']
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      id-token: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dart-lang/setup-dart@v1
+      - run: dart pub get
+      - run: dart format --output=none --set-exit-if-changed .
+      - run: dart analyze
+      - run: dart test
+      - run: dart pub publish --dry-run
+      - name: GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          generate_release_notes: true
+      # Prefer pub.dev trusted publishing / OIDC — configure on pub.dev.
+      # Avoid long-lived PUB_CREDENTIALS secrets when trusted publishing is available.
+      - name: Publish to pub.dev
+        run: dart pub publish --force
+        continue-on-error: true

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="PubDoctor social preview">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0A1620"/>
+      <stop offset="55%" stop-color="#0B3D4A"/>
+      <stop offset="100%" stop-color="#1F7A8C"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="980" cy="120" r="180" fill="#F4A261" opacity="0.12"/>
+  <circle cx="160" cy="520" r="140" fill="#E8F1F2" opacity="0.08"/>
+  <rect x="90" y="170" width="180" height="180" rx="40" fill="#0A1620" opacity="0.35"/>
+  <path d="M180 200 L250 240 L250 300 L180 340 L110 300 L110 240 Z" fill="none" stroke="#E8F1F2" stroke-width="10" stroke-linejoin="round"/>
+  <circle cx="150" cy="255" r="8" fill="#E8F1F2"/>
+  <circle cx="180" cy="275" r="10" fill="#F4A261"/>
+  <circle cx="210" cy="255" r="8" fill="#E8F1F2"/>
+  <path d="M145 310 L170 332 L220 270" fill="none" stroke="#F4A261" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="310" y="270" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="86" font-weight="700" fill="#E8F1F2">PubDoctor</text>
+  <text x="310" y="350" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="36" fill="#F4A261">Diagnose your Dart dependencies.</text>
+  <text x="310" y="420" font-family="Consolas, Menlo, monospace" font-size="28" fill="#E8F1F2" opacity="0.8">pubdoctor check · conflicts · unlock · fix</text>
+</svg>

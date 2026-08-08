@@ -1,0 +1,16 @@
+name: Diagnostic feedback
+description: Feedback on a PD#### diagnostic
+labels: ["diagnostics"]
+body:
+  - type: input
+    id: code
+    attributes:
+      label: Diagnostic code (e.g. PD1301)
+    validations:
+      required: true
+  - type: textarea
+    id: feedback
+    attributes:
+      label: What was confusing, wrong, or missing?
+    validations:
+      required: true
