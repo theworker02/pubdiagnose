@@ -1,9 +1,8 @@
 name: pubdiagnose
 description: >
-  PubDiagnose — Diagnose your Dart dependencies. Explains why packages are
-  installed, what blocks upgrades, and which constraints conflict — without
-  replacing pub's solver. CLI: pubdoctor.
-version: 2.0.0-rc.1
+  Diagnose Dart dependencies: why packages are installed, what blocks
+  upgrades, and which constraints conflict. CLI: pubdoctor.
+version: 2.0.0-rc.2
 repository: https://github.com/theworker02/pubdiagnose
 homepage: https://github.com/theworker02/pubdiagnose
 issue_tracker: https://github.com/theworker02/pubdiagnose/issues

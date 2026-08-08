@@ -8,7 +8,7 @@
   <a href="https://pub.dev/packages/pubdiagnose"><img src="https://img.shields.io/pub/v/pubdiagnose.svg" alt="pub package" /></a>
   <a href="https://pub.dev/packages/pubdiagnose"><img src="https://img.shields.io/pub/likes/pubdiagnose?logo=dart" alt="pub likes" /></a>
   <a href="https://github.com/theworker02/pubdiagnose/actions"><img src="https://github.com/theworker02/pubdiagnose/actions/workflows/ci.yml/badge.svg" alt="CI" /></a>
-  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="MIT license" /></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-BSD--3--Clause-blue.svg" alt="BSD 3-Clause license" /></a>
 </p>
 
 **Diagnose your Dart dependencies.**
@@ -37,7 +37,7 @@ Or as a dev dependency:
 
 ```yaml
 dev_dependencies:
-  pubdiagnose: ^2.0.0-rc.1
+  pubdiagnose: ^2.0.0-rc.2
 ```
 
 Then run the CLI (executable name is still `pubdoctor`):
@@ -140,4 +140,4 @@ dart run scripts/verify.dart --skip-publish
 
 ## License
 
-MIT
+[BSD 3-Clause](LICENSE)

@@ -1,5 +1,13 @@
 # Changelog
 
+## 2.0.0-rc.2
+
+### Packaging / pub points
+
+- Shortened `pubspec.yaml` `description` to the 60–180 character range required by pana (was too long → 0/10 “valid pubspec”).
+- Added pana-detectable example at `example/pubdiagnose_example.dart` (+ `example/README.md`). Previous `example/pubdoctor_example.dart` did not match package name `pubdiagnose`.
+- Relicensed from MIT to **BSD 3-Clause** (`LICENSE`).
+
 ## 2.0.0-rc.1
 
 ### Packaging note
