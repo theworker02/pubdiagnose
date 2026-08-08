@@ -13,5 +13,5 @@ PubDiagnose is maintained as long-lived Dart ecosystem infrastructure.
 
 ## Contact
 
-- Issues: https://github.com/theworker02/pubdoctor/issues
+- Issues: https://github.com/theworker02/pubdiagnose/issues
 - Security: prefer private disclosure via GitHub security advisories when available
