@@ -19,7 +19,7 @@ jobs:
       - run: dart test
       - run: dart pub publish --dry-run
       - name: GitHub Release
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@v3
         with:
           generate_release_notes: true
       # Prefer pub.dev trusted publishing / OIDC — configure on pub.dev.
