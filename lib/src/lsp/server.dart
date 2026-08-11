@@ -33,7 +33,7 @@ class PubDoctorLspServer {
     Stream<List<int>>? input,
     void Function(String message)? output,
   }) async {
-    final inStream = input ?? Stream<List<int>>.empty();
+    final inStream = input ?? const Stream<List<int>>.empty();
     final out = output ?? (_) {};
     final buffer = <int>[];
 
@@ -44,8 +44,9 @@ class PubDoctorLspServer {
         if (headerEnd < 0) break;
 
         final header = utf8.decode(buffer.sublist(0, headerEnd));
-        final lengthMatch = RegExp(r'Content-Length:\s*(\d+)', caseSensitive: false)
-            .firstMatch(header);
+        final lengthMatch =
+            RegExp(r'Content-Length:\s*(\d+)', caseSensitive: false)
+                .firstMatch(header);
         if (lengthMatch == null) {
           buffer.removeRange(0, headerEnd + 4);
           break;
@@ -81,7 +82,8 @@ class PubDoctorLspServer {
     return -1;
   }
 
-  void _writeFrame(void Function(String message) output, Map<String, Object?> msg) {
+  void _writeFrame(
+      void Function(String message) output, Map<String, Object?> msg) {
     final json = jsonEncode(msg);
     output('Content-Length: ${utf8.encode(json).length}\r\n\r\n$json');
   }
@@ -144,7 +146,8 @@ class PubDoctorLspServer {
           );
         case 'pubdoctor/explain':
           _requireInit();
-          final target = params['target'] as String? ?? params['package'] as String?;
+          final target =
+              params['target'] as String? ?? params['package'] as String?;
           if (target == null || target.isEmpty) {
             return _errorResponse(id, -32602, 'missing target');
           }

@@ -67,8 +67,8 @@ void main() {
       final headerEnd = indexOfCrlfCrlf(bytes, offset);
       if (headerEnd < 0) break;
       final header = utf8.decode(bytes.sublist(offset, headerEnd));
-      final match =
-          RegExp(r'Content-Length:\s*(\d+)', caseSensitive: false).firstMatch(header);
+      final match = RegExp(r'Content-Length:\s*(\d+)', caseSensitive: false)
+          .firstMatch(header);
       expect(match, isNotNull);
       final len = int.parse(match!.group(1)!);
       final bodyStart = headerEnd + 4;
@@ -90,11 +90,11 @@ void main() {
     ]);
 
     expect(frames.length, 3);
-    expect(frames[0]['result'], isA<Map>());
-    final caps = frames[0]['result'] as Map;
-    expect(caps['serverInfo'], isA<Map>());
-    expect(frames[1]['result'], isA<Map>());
-    final inspect = frames[1]['result'] as Map;
+    expect(frames[0]['result'], isA<Map<String, dynamic>>());
+    final caps = frames[0]['result'] as Map<String, dynamic>;
+    expect(caps['serverInfo'], isA<Map<String, dynamic>>());
+    expect(frames[1]['result'], isA<Map<String, dynamic>>());
+    final inspect = frames[1]['result'] as Map<String, dynamic>;
     expect(inspect['tool'], 'pubdoctor');
     expect(frames[2]['result'], isNull);
   });
@@ -111,9 +111,9 @@ void main() {
     ]);
 
     expect(frames.length, greaterThanOrEqualTo(2));
-    final result = frames[1]['result'] as Map;
+    final result = frames[1]['result'] as Map<String, dynamic>;
     expect(result['status'], isA<String>());
-    expect(result['diagnostics'], isA<List>());
+    expect(result['diagnostics'], isA<List<Object?>>());
   });
 
   test('why explains dependency path', () async {
@@ -127,7 +127,7 @@ void main() {
       },
     ]);
 
-    final result = frames[1]['result'] as Map;
+    final result = frames[1]['result'] as Map<String, dynamic>;
     expect(result['package'], 'collection');
     expect(result['pathCount'], greaterThan(0));
   });
@@ -143,7 +143,7 @@ void main() {
       },
     ]);
 
-    final result = frames[1]['result'] as Map;
+    final result = frames[1]['result'] as Map<String, dynamic>;
     expect(result['kind'], 'diagnostic');
     expect(result['code'], 'PD1001');
   });
