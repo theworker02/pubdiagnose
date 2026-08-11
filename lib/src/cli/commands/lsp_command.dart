@@ -1,7 +1,7 @@
 import 'dart:io';
 
-import '../../lsp/server.dart';
 import '../../kernel/pubdoctor_options.dart';
+import '../../lsp/server.dart';
 import '../console.dart';
 import '../runner.dart';
 
