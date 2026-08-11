@@ -1,5 +1,15 @@
 # Changelog
 
+## 2.0.0 — 2026-08-11
+
+### Added — LSP stdio protocol
+
+- `pubdoctor lsp` — JSON-RPC 2.0 Content-Length framed stdio server
+- Methods: `initialize`, `shutdown`, `exit`, `pubdoctor/inspect`, `pubdoctor/check`, `pubdoctor/explain`, `pubdoctor/why`
+- Exported [`PubDoctorLspServer`](lib/src/lsp/server.dart) for IDE integration
+- `docs/lsp.md` protocol overview
+- Unit tests with fake streams
+
 ## 2.0.0-rc.2
 
 ### Packaging / pub points

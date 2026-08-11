@@ -34,6 +34,7 @@ export 'src/kernel/pubdoctor_kernel.dart';
 export 'src/kernel/pubdoctor_options.dart';
 export 'src/kernel/service_registry.dart';
 export 'src/lockfile/lockfile_parser.dart';
+export 'src/lsp/server.dart';
 export 'src/metadata/package_repository.dart';
 export 'src/models/constraints.dart';
 export 'src/models/dependency_spec.dart';
