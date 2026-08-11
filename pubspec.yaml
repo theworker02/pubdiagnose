@@ -2,7 +2,7 @@ name: pubdiagnose
 description: >
   Diagnose Dart dependencies: why packages are installed, what blocks
   upgrades, and which constraints conflict. CLI: pubdoctor.
-version: 2.0.0-rc.2
+version: 2.0.0
 repository: https://github.com/theworker02/pubdiagnose
 homepage: https://github.com/theworker02/pubdiagnose
 issue_tracker: https://github.com/theworker02/pubdiagnose/issues

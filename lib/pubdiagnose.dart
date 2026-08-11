@@ -44,6 +44,7 @@ export 'src/models/health.dart';
 export 'src/models/lockfile.dart';
 export 'src/models/metadata.dart';
 export 'src/models/pubspec_document.dart';
+export 'src/lsp/server.dart';
 export 'src/models/recommendations.dart';
 export 'src/platform/environment_adapter.dart';
 export 'src/platform/filesystem_adapter.dart';

@@ -24,6 +24,7 @@ import 'commands/health_command.dart';
 import 'commands/impact_command.dart';
 import 'commands/imports_command.dart';
 import 'commands/inspect_command.dart';
+import 'commands/lsp_command.dart';
 import 'commands/maintain_command.dart';
 import 'commands/migrate_command.dart';
 import 'commands/migration_command.dart';
@@ -153,6 +154,7 @@ class PubDoctorCommandRunner extends CommandRunner<int> {
     addCommand(CacheCommand());
     addCommand(DoctorReportCommand());
     addCommand(InspectCommand());
+    addCommand(LspCommand());
     addCommand(RiskCommand());
     addCommand(MigrateCommand());
     addCommand(MigrationCommand());
