@@ -133,7 +133,7 @@ class PubDoctorLspServer {
           _requireInit();
           final offline = params['offline'] == true;
           final result = await _kernel!.check(offline: offline);
-          return result.when(
+          return result.when<Map<String, Object?>>(
             ok: (report) => _response(id, {
               'status': report.status.name,
               'summary': report.summary,
@@ -172,7 +172,7 @@ class PubDoctorLspServer {
             return _errorResponse(id, -32602, 'missing package');
           }
           final loaded = await _kernel!.loadWorkspace();
-          return loaded.when(
+          return loaded.when<Map<String, Object?>>(
             ok: (ws) {
               final graph = ws.graph;
               final node = graph.package(package);
