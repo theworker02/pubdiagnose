@@ -40,7 +40,7 @@ class CacheCommand extends PubDoctorCommand {
     );
     try {
       final result = kernel.cacheCommand(action);
-      return result.when(
+      return result.when<int>(
         ok: (data) {
           if (console.json) {
             console.writeJson({'command': 'cache', 'action': action, ...data});

@@ -25,7 +25,7 @@ class RecoverCommand extends PubDoctorCommand {
     );
     try {
       final result = await kernel.recover();
-      return result.when(
+      return result.when<int>(
         ok: (data) {
           if (console.json) {
             console.writeJson({'command': 'recover', ...data});

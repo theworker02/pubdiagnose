@@ -79,14 +79,12 @@ final class PackageRepositoryException extends PubDoctorException {
 
 /// Offline / unreachable repository.
 final class OfflineRepositoryException extends PackageRepositoryException {
-  OfflineRepositoryException({String? package, Object? cause})
+  OfflineRepositoryException({super.package, super.cause})
       : super(
           package == null
               ? 'Package repository is unreachable (offline or timed out).'
               : 'Package repository is unreachable while fetching "$package".',
           code: 'PD2002',
-          cause: cause,
-          package: package,
         );
 }
 
