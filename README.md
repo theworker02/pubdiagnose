@@ -1,4 +1,4 @@
-# PubDiagnose
+﻿# PubDiagnose
 
 <p align="center">
   <img src="assets/branding/logo-horizontal.svg" alt="PubDiagnose" width="420" />
@@ -13,13 +13,13 @@
 
 **Diagnose your Dart dependencies.**
 
-[pub.dev package](https://pub.dev/packages/pubdiagnose) · [Documentation](docs/) · [Changelog](CHANGELOG.md)
+[pub.dev package](https://pub.dev/packages/pubdiagnose) Â· [Documentation](docs/) Â· [Changelog](CHANGELOG.md)
 
 Pub already resolves dependencies. PubDiagnose answers the questions developers still struggle with:
 
 - Why is this package installed?
 - Which dependency introduced it?
-- Why can’t this package upgrade?
+- Why canâ€™t this package upgrade?
 - Which constraints conflict?
 - Which dependency is blocking a newer Dart/Flutter SDK?
 - Are `dependency_overrides` still necessary?
@@ -82,8 +82,8 @@ pubdoctor outdated
 
 ### Global options
 
-- `--project <path>` / `-p` — package directory (default `.`)
-- `--json` — stable machine-readable output
+- `--project <path>` / `-p` â€” package directory (default `.`)
+- `--json` â€” stable machine-readable output
 - `--verbose` / `-v`
 - `--no-color`
 - `--help`, `--version`
@@ -140,4 +140,5 @@ dart run scripts/verify.dart --skip-publish
 
 ## License
 
-[BSD 3-Clause](LICENSE)
+**Source-available proprietary** — evaluation under [LICENSE](./LICENSE); commercial / production use via [COMMERCIAL.md](./COMMERCIAL.md). See [LICENSE_TRANSITION_NOTICE.md](./LICENSE_TRANSITION_NOTICE.md) and [NOTICE](./NOTICE).
+
