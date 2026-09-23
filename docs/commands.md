@@ -1,4 +1,4 @@
-﻿# Commands
+# Commands
 
 All commands honor `--project`, `--json`, `--verbose`, and `--no-color` where applicable.
 

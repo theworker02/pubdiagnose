@@ -1,4 +1,4 @@
-﻿# Diagnostics catalog
+# Diagnostics catalog
 
 | Code | Title |
 |------|-------|

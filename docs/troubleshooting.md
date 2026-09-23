@@ -1,4 +1,4 @@
-﻿# Troubleshooting
+# Troubleshooting
 
 - **Missing lockfile:** run `dart pub get` (PD0005).
 - **Offline outdated/unlock:** use `--offline` on `check`, or inject `FakePackageRepository` in tests.

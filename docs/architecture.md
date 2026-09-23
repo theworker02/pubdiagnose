@@ -1,4 +1,4 @@
-﻿# Architecture
+# Architecture
 
 ```
 loader → parsers → graph → constraints → metadata

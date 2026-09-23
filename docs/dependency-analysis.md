@@ -1,4 +1,4 @@
-﻿# Dependency analysis
+# Dependency analysis
 
 PubDoctor builds a graph from `pubspec.yaml` + `pubspec.lock`, optionally enriching hosted edges from the local pub cache.
 

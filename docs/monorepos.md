@@ -1,4 +1,4 @@
-﻿# Monorepos / workspaces
+# Monorepos / workspaces
 
 ```bash
 pubdoctor workspace
