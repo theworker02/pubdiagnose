@@ -1,4 +1,4 @@
-﻿# Configuration
+# Configuration
 
 Optional `pubdoctor.yaml` or `.pubdoctor.yaml` in the project root:
 

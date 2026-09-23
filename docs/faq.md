@@ -1,4 +1,4 @@
-﻿# FAQ
+# FAQ
 
 **Does PubDiagnose replace `dart pub get`?** No.
 

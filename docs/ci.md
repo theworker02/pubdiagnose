@@ -1,4 +1,4 @@
-﻿# CI
+# CI
 
 ```bash
 dart pub global activate pubdiagnose

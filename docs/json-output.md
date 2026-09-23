@@ -1,4 +1,4 @@
-﻿# JSON output
+# JSON output
 
 Pass `--json` (global or per-command). Payloads include a `command` field and structured diagnostics with `code`, `severity`, `evidence`, and `remediation`.
 
